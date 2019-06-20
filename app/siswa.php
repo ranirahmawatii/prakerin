@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class siswa extends Model
+class Siswa extends Model
 {
-    protected $tabel = 'siswas' ;
-    protected $filable = ['nama'];
+   protected $fillable = ['nama'];
+   public $timestamps = true;
 }

@@ -1,9 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Controllers;
-use App\User;
-use App\siswa;
+namespace App\Http\Controllers\Api;
+
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
+use App\User;
+use App\Siswa;
 
 class SiswaController extends Controller
 {
@@ -14,22 +17,21 @@ class SiswaController extends Controller
      */
     public function index()
     {
-          $siswa = siswa::all();
+        $siswa = [];
         if(!$siswa) {
             $response = [
-                'success' => false,
+                'success' =>false,
                 'data' => 'Empety',
-                'message' => 'Siswa tidak ditemukan.'
+                'message' => 'siswa tdk d temukan.'
             ];
             return response()->json($response,404);
         }
-        $response = [
-            'success' => true,
-            'data' => $siswa,
-            'message' => 'Berhasil.'
-        ];
-        return response()->json($response, 200);
-    }
+         $response = [
+                'success' =>true,
+                'data' => $siswa,
+                'message' => 'berhasil'
+            ];
+     }
 
     /**
      * Show the form for creating a new resource.
@@ -49,7 +51,36 @@ class SiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 1. tembung semua inputan ke $input
+        $input = $request->all();
+
+        // 2. buat validasi di tambung ke $validator
+        $validator = Validator::make($input, [
+            'nama' => 'required|min:5'
+        ]);
+
+        //3. cek validasi
+        if ($validator->fails()) {
+            $response = [
+                'success' => false,
+                'data' => 'Validator Error,',
+                'message' => $validator->errors()
+            ];
+            return response()->json($response,500);
+        }
+
+        //4. buat fungsi untuk menghandle semua inputan ->dimasukan ketable
+        $siswa =Siswa::create($input);
+
+        //5. menampilkan response
+        $response = [
+            'success' => true,
+            'data' => $siswa,
+            'message' => 'Siswa Berhasil ditambahkan.'
+        ];
+
+        //6. tampilkan hasil
+        return response()->json($response,200);
     }
 
     /**
@@ -60,7 +91,20 @@ class SiswaController extends Controller
      */
     public function show($id)
     {
-        //
+          $siswa = Siswa::Find($id);
+        if(!$siswa) {
+            $response = [
+                'success' =>false,
+                'data' => 'Empety',
+                'message' => 'Siswa tdk d temukan'
+            ];
+            return response()->json($response,404);
+        }
+         $response = [
+                'success' =>false,
+                'data' => 'siswa',
+                'message' => 'berhasil'
+            ];
     }
 
     /**
