@@ -23,13 +23,14 @@ class SiswaController extends Controller
                 'data' => 'Empety',
                 'message' => 'siswa tdk ditemukan.'
             ];
-            return response()->json($response,404);
+            
         }
          $response = [
                 'success' =>true,
                 'data' => $siswa,
                 'message' => 'berhasil'
             ];
+            return response()->json($response,404);
      }
 
     /**
