@@ -17,7 +17,7 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        $siswa = [];
+        $siswa = Siswa::all();
         if(!$siswa) {
             $response = [
                 'success' =>false,
