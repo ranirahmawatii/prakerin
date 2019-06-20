@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
-use App\User;
 use App\Siswa;
 
 class SiswaController extends Controller
@@ -22,7 +21,7 @@ class SiswaController extends Controller
             $response = [
                 'success' =>false,
                 'data' => 'Empety',
-                'message' => 'siswa tdk d temukan.'
+                'message' => 'siswa tdk ditemukan.'
             ];
             return response()->json($response,404);
         }
@@ -91,7 +90,7 @@ class SiswaController extends Controller
      */
     public function show($id)
     {
-          $siswa = Siswa::Find($id);
+        $siswa = Siswa::Find($id);
         if(!$siswa) {
             $response = [
                 'success' =>false,
@@ -127,20 +126,20 @@ class SiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $siswa = Siswa::find($id);
-        $input = $request->all();
+            $siswa = Siswa::find($id);
+            $input = $request->all();
 
-        if(!$siswa) {
-            $response = [
-                'success' =>false,
-                'data' => 'Empety',
-                'message' => 'Siswa tdk d temukan'
-            ];
-             return response()->json($response,404);
-        }
-         $validator = Validator::make($input, [
-            'nama' => 'required|min:5'
-        ]);
+            if(!$siswa) {
+                $response = [
+                    'success' =>false,
+                    'data' => 'Empety',
+                    'message' => 'Siswa tdk d temukan'
+                ];
+                return response()->json($response,404);
+            }
+            $validator = Validator::make($input, [
+                'nama' => 'required|min:5'
+            ]);
         if ($validator->fails()) {
             $response = [
                 'success' => false,
@@ -148,16 +147,16 @@ class SiswaController extends Controller
                 'message' => $validator->errors()
             ];
             return response()->json($response,500);
-    }
-    $siswa->nama =$input['nama'];
-    $siswa->save();
-     $response = [
-            'success' => true,
-            'data' => $siswa,
-            'message' => 'Siswa Berhasil ditambahkan.'
-        ];
-        return response()->json($response,200);
-}
+            }
+            $siswa->nama =$input['nama'];
+            $siswa->save();
+            $response = [
+                    'success' => true,
+                    'data' => $siswa,
+                    'message' => 'Siswa Berhasil ditambahkan.'
+                ];
+                return response()->json($response,200);
+        }
 
 
     /**
@@ -177,13 +176,13 @@ class SiswaController extends Controller
                 'message' => 'Siswa tdk d temukan'
             ];
              return response()->json($response,404);
+            }
+            $siswa->delete();
+            $response = [
+                'success' => true,
+                'data' => $siswa,
+                'message' => 'siswa berhasil d hps.'
+            ];
+            return response()->json($response,200);
     }
-    $siswa->delete();
-    $response = [
-        'success' => true,
-        'data' => $siswa,
-        'message' => 'siswa berhasil d hps.'
-    ];
-     return response()->json($response,200);
-}
 }
