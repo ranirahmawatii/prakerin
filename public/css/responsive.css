@@ -1,379 +1,237 @@
-@media (max-width:1619px){
-	/* Main Menu Area css
-	============================================================================================ */
-   .header_area .navbar .search {
-		margin-left: 40px;
-	}
-	/* End Main Menu Area css
-	============================================================================================ */
-}
-@media (max-width:1199px){
-	/* Main Menu Area css
-	============================================================================================ */
-	.header_area .navbar .nav .nav-item {
-		margin-right: 28px;
-	}
-	.header_area + section, .header_area + div {
-		margin-top: 168px;
-	}
-	.top_menu .container{
-		display: block;
-	}
-	/* End Main Menu Area css
-	============================================================================================ */
-	/* Home Banner Area css
-	============================================================================================ */
-	.home_banner_area {
-		min-height: 700px;
-	}
-	/* End Home Banner Area css
-	============================================================================================ */
-	.header_magazin img{
-		max-width: 100%;
-	}
-	.logo_part .container{
-		display: flex;
-	}
-	.logo_part .float-left{
-		padding-right: 50px;
-	}
-	.choice_text {
-		margin-top: 0px;
-	}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-stock-report .stock-values span {
+        padding-right: 10px;
+    }
+    .single-stock-report {
+        margin-right: 10px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide .single-blog-post-content {
+        top: 30px;
+        left: 30px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide {
+        height: 450px;
+    }
+    .dont-miss-post-thumb {
+        margin-right: 15px;
+    }
+    .single-blog-post-slide h3 a,
+    .editorial-post-content h2 a,
+    .gazette-welcome-post h2 {
+        font-size: 36px;
+    }
+    .comment_area ol li ol li .comment-wrapper {
+        margin-left: 80px;
+    }
 }
 
-@media (max-width:991px){
-	/* Main Menu Area css
-	============================================================================================ */
-	.logo_part {
-		display: none;
-	}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-stock-report .stock-values span {
+        padding-right: 5px;
+        font-size: 10px;
+    }
+    .single-stock-report {
+        margin-right: 5px;
+    }
+    #breakingNewsTicker.ticker ul li a {
+        font-size: 12px;
+    }
     .navbar-toggler {
+        padding: 0;
+        font-size: 20px;
+        background-color: #ff0303;
         border: none;
-        border-radius: 0px;
-        padding: 0px;
-        cursor: pointer;
-        margin-top: 27px;
-        margin-bottom: 23px;
-		float: right;
+        border-radius: 6px;
+        width: 120px;
+        height: 35px;
+        color: #fff;
+        line-height: 28px;
+        margin: 10px 0;
     }
-	.header_area .navbar {
-		background: #fff;
-	}
-    .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
-		opacity: 1;
-	}
-	.navbar-toggler[aria-expanded="true"] span:nth-child(2) {
-		opacity: 0;
-	}
-	.navbar-toggler[aria-expanded="true"] span:first-child {
-		transform: rotate(-45deg);
-		position: relative;
-		top: 7.5px;
-	}
-	.navbar-toggler[aria-expanded="true"] span:last-child {
-		transform: rotate(45deg);
-		bottom: 6px;
-		position: relative;
-	}
-	.navbar-toggler span{
-		display: block;
-		width: 25px;
-		height: 3px;
-		background: #ea2c58;
-		margin: auto;
-		margin-bottom: 4px;
-		transition: all 400ms linear;
-		cursor: pointer;
-	}
-    .navbar .container{
-        padding-left: 15px;
-        padding-right: 15px;
+    #gazetteMenu {
+        padding: 30px;
+        background-color: #f4f2f8;
+        z-index: 1002;
     }
-    .nav{
-        padding: 0px 0px;
+    .header-search-form form input {
+        width: 600px;
+        margin-bottom: 20px;
     }
-	.header_area + section, .header_area + row, .header_area + div {
-		margin-top: 117px;
-	}
-    .header_top .nav{
-        padding: 0px;
+    .welcome-blog-post-slide .single-blog-post-slide .single-blog-post-content {
+        top: 30px;
+        left: 30px;
     }
-    .header_area .navbar .nav .nav-item .nav-link{
-        line-height: 40px;
-        margin-right: 0px;
-        display: block;
-		border-bottom: 1px solid #ededed33;
-		border-radius: 0px;
+    .welcome-blog-post-slide .single-blog-post-slide {
+        height: 420px;
     }
-    .header_area .navbar .search{
-        margin-left: 0px;
+    .todays-post-thumb,
+    .dont-miss-post-thumb {
+        margin-right: 15px;
     }
-	.header_area .navbar-collapse{
-		max-height: 340px;
-		overflow-y: scroll;
-	}
-	.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
-		padding: 0px 15px;
-	}
-	.header_area .navbar .nav .nav-item {
-		margin-right: 0px;
-	}
-	.header_area + section, .header_area + row, .header_area + div {
-		margin-top: 66px;
-	}
-	.main_menu .navbar .container_inner {
-		display: block;
-	}
-	.main_menu .navbar .navbar-brand {
-		display: inline-block;
-		padding-top: 11px;
-	}
-	/* End Main Menu Area css
-	============================================================================================ */
-	
-	/* Contact Page Area css
-	============================================================================================ */
-	.contact_info{
-		margin-bottom: 50px;
-	}
-	/* End Contact page Area css
-	============================================================================================ */
-	.home_banner_area .donation_inner{
-		margin-bottom: -30px;
-	}
-	/* Footer Area css
-	============================================================================================ */
-	/* End End Footer Area css
-	============================================================================================ */
-	.home_banner_area {
-		background-size: cover;
-		margin-bottom: 0px;
-	}
-	.choice_item{
-		max-width: 270px;
-	}
-	.choice_item.small{
-		max-width: 170px;
-	}	
-	.right_sidebar{
-		margin-top: 50px;
-	}	
-	.news_widgets .choice_item{
-		margin: 0px auto 30px;
-	}
-	.product_list_inner{
-		margin-bottom: -30px;
-	}
-	.product_list_inner .col-lg-4{
-		margin-bottom: 30px;
-	}
-	.f_widgets_inner .col-sm-6{
-		margin-bottom: 40px;
-	}
-	.f_widgets_inner{
-		margin-bottom: -40px;
-	}
-	.choice_small_inner{
-		max-width: 400px;
-	}
-}
-@media (max-width:767px){
-	.home_banner_area {
-		min-height: 500px;
-	}
-	.home_banner_area .banner_inner {
-		min-height: 500px;
-	}
-	.home_banner_area .banner_inner .banner_content {
-		margin-top: 0px;
-	}
-	/* Blog Page Area css
-	============================================================================================ */
-    .blog_banner .banner_inner .blog_b_text h2 {
-		font-size: 40px;
-		line-height: 50px;
-	}
-	.blog_info.text-right{
-		text-align: left !important;
-		margin-bottom: 10px;
-	}
-	/* End Blog Page Area css
-	============================================================================================ */
-	.home_banner_area .banner_inner .banner_content h3 {
-		font-size: 30px;
-	}
-	.home_banner_area .banner_inner .banner_content p br {
-		display: none;
-	}
-	/* Footer Area css
-	============================================================================================ */
-	
-	/* End End Footer Area css
-	============================================================================================ */
-	.choice_item{
-		margin: 0px auto 30px;
-	}
-	.latest_news .media .d-flex {
-		padding-right: 0px;
-		display: block;
-		margin-bottom: 20px;
-	}
-	.latest_news .media {
-		margin-bottom: 0px;
-		display: block;
-		max-width: 300px;
-		margin: 0px auto 30px;
-	}
-	.footer-bottom .footer-text{
-		text-align: center;
-	}
-	.footer-bottom .footer-social {
-		text-align: center;
-		margin-bottom: 20px;
-	}
-}
-@media (max-width:575px){
-	
-	.header_area + section, .header_area + row, .header_area + div {
-		margin-top: 71px;
-	}
-	.top_menu {
-		display: none;
-	}
-	
-    /* Home Banner Area css
-	============================================================================================ */
-	.home_banner_area .banner_inner .banner_content h2 {
-		font-size: 28px;
-	}
-	.home_banner_area {
-		min-height: 500px;
-	}
-	.home_banner_area .banner_inner {
-		min-height: 500px;
-	}
-	.blog_banner .banner_inner .blog_b_text {
-		margin-top: 0px;
-	}
-	.home_banner_area .banner_inner .banner_content img{
-		display: none;
-	}
-	.home_banner_area .banner_inner .banner_content h5 {
-		margin-top: 0px;
-	}
-	.home_banner_area .banner_inner .banner_content .date a {
-		margin-right: 8px;
-	}
-	/* End Home Banner Area css
-	============================================================================================ */
-	.p_120 {
-		padding-top: 70px;
-		padding-bottom: 70px;
-	}
-	.main_title h2 {
-		font-size: 25px;
-	}
-	/* Elements Area css
-	============================================================================================ */
-	.sample-text-area {
-		padding: 70px 0 70px 0;
-	}
-	/* End Elements Area css
-	============================================================================================ */
-	
-	/* Blog Page Area css
-	============================================================================================ */
-	.blog_details h2 {
-		font-size: 20px;
-		line-height: 30px;
-	}
-	.blog_banner .banner_inner .blog_b_text h2 {
-		font-size: 28px;
-		line-height: 38px;
-	}
-	.banner_area .banner_inner .banner_content {
-		margin-top: 0px;
-	}
-	/* End Blog Page Area css
-	============================================================================================ */
-	/* Footer Area css
-	============================================================================================ */
-	/* End End Footer Area css
-	============================================================================================ */
-	.pad_top {
-		padding-top: 70px;
-	}
-	.mt-100 {
-		margin-top: 50px;
-	}
-	.single-footer-widget p {
-		max-width: 100%;
-	}
-	.p_100 {
-		padding-top: 70px;
-		padding-bottom: 70px;
-	}
-	.main_blog_details h4 {
-		font-size: 28px;
-	}
-	.main_blog_details h4 br {
-		display: none;
-	}
-	.main_blog_details .news_d_footer {
-		display: block;
-		text-align: center;
-	}
-	.main_blog_details .news_d_footer .justify-content-center {
-		display: block;
-		text-align: center;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
+    .single-post-title-content h2,
+    .editorial-post-content h2 a,
+    .single-blog-post-slide h3 a,
+    .gazette-welcome-post h2 {
+        font-size: 30px;
+    }
+    .comment-author {
+        margin-right: 10px;
+    }
+    .comment_area ol li ol li .comment-wrapper {
+        margin-left: 70px;
+    }
 }
 
-@media (max-width:480px){
-	/* Main Menu Area css
-	============================================================================================ */
-	.header_area .navbar-collapse{
-		max-height: 250px;
-	}
-	/* End Main Menu Area css
-	============================================================================================ */
-	
-	/* Home Banner Area css
-	============================================================================================ */
-    .home_banner_area .banner_inner .banner_content {
-		padding: 30px 15px;
-		margin-top: 0px;
-	}
-	.banner_content .white_btn {
-		display: block;
-	}
-	.home_banner_area .banner_inner .banner_content h3 {
-		font-size: 24px;
-	}
-	.home_banner_area .carousel .carousel-indicators {
-		bottom: -50px;
-		z-index: 20;
-	}
-	/* End Home Banner Area css
-	============================================================================================ */
-	.banner_area .banner_inner .banner_content h2 {
-		font-size: 32px;
-	}
-	/* Blog Page Area css
-	============================================================================================ */
-	.comments-area .thumb {
-		margin-right: 10px;
-	}
-	
-	/* End Blog Page Area css
-	============================================================================================ */
-	.home_banner_area {
-		min-height: 400px;
-	}
-	.home_banner_area .banner_inner {
-		min-height: 400px;
-	}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .top-header {
+        height: auto;
+        padding: 20px 0;
+    }
+    .single-stock-report .stock-values span {
+        padding-right: 2px;
+        font-size: 9px;
+    }
+    .single-stock-report {
+        margin-right: 2px;
+    }
+    #breakingNewsTicker.ticker ul li a {
+        font-size: 10px;
+    }
+    .single-stock-report .stock-index h4 {
+        font-size: 20px;
+    }
+    .stock-news-area {
+        margin-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        padding-top: 15px;
+    }
+    .navbar-toggler {
+        padding: 0;
+        font-size: 20px;
+        background-color: #ff0303;
+        border: none;
+        border-radius: 6px;
+        width: 120px;
+        height: 35px;
+        color: #fff;
+        line-height: 28px;
+        margin: 10px 0;
+    }
+    #gazetteMenu {
+        padding: 30px;
+        background-color: #f4f2f8;
+        z-index: 1002;
+    }
+    .header-search-form form input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo-area a img {
+        height: 20px;
+        width: auto;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide .single-blog-post-content {
+        top: 20px;
+        left: 20px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide {
+        height: 380px;
+    }
+    .single-blog-post-slide h3 a {
+        font-size: 24px;
+    }
+    .todays-post-thumb,
+    .dont-miss-post-thumb {
+        margin-right: 15px;
+    }
+    .single-post-title-content h2,
+    .editorial-post-content h2 a,
+    .single-blog-post-slide h3 a,
+    .gazette-welcome-post h2 {
+        font-size: 24px;
+    }
+    .gazette-welcome-post p {
+        font-size: 16px;
+    }
+    .post-share-btn-group,
+    .editorial-post-content {
+        margin-top: 30px;
+    }
+    .todays-post-thumb {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .gazette-heading h4 {
+        font-size: 20px;
+    }
+    .todays-post-content {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .catagory-welcome-post-area .col-12:last-child .gazette-welcome-post .blog-post-thumbnail,
+    .catagory-welcome-post-area .col-12:last-child .gazette-welcome-post .welcome-post-contents {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .catagory-welcome-post-area .col-12:last-child .gazette-welcome-post .welcome-post-contents {
+        margin-left: 0 !important;
+        margin-top: 30px;
+    }
+    .page-item .page-link {
+        margin-right: 10px;
+    }
+    .comment-author {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .comment-wrapper {
+        margin-bottom: 30px;
+    }
+    .comment_area ol li ol li .comment-wrapper {
+        margin-left: 30px;
+    }
+    .gazette-contact-area form {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .single-stock-report .stock-values span {
+        padding-right: 5px;
+        font-size: 10px;
+    }
+    .single-stock-report {
+        margin-right: 5px;
+    }
+    #breakingNewsTicker.ticker ul li a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single-stock-report .stock-values span {
+        padding-right: 15px;
+        font-size: 10px;
+    }
+    .single-stock-report {
+        margin-right: 15px;
+    }
+    #breakingNewsTicker.ticker ul li a {
+        font-size: 12px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide .single-blog-post-content {
+        top: 30px;
+        left: 30px;
+    }
+    .post-share-btn-group {
+        margin-top: 0;
+    }
 }
