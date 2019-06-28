@@ -37,3 +37,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin',function() {
     return view('layouts.back');
 });
+
+Route::resource('kategori', 'KategoriController');
+Route::resource('tag', 'tagController');
+Route::resource('artikel', 'artikelController');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -925,6 +925,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- Active js -->
     <script src="js/active.js"></script>
 
+<script src="{{asset('assest/backend/ckeditor/ckeditor.js')}}"></script>
+
+<script>
+ CKEDITOR.replace('texteditor');
+ </script>
+
+ @yield('js')
+ @astack('script')
 </body>
 
 </html>
+@section('js')
+<script>
+var url = 'api/json'
+$.ajax({
+    url : url + '/most',<-
+    dataType: 'json',
+    success: function(berhasil){
+        $.each(berhasil.data, function(key,value){
+            $(".berita-terakhir").append(
+                `
+
+                `
+            )
+    }
+})
+},
+error: function(gagal){
+    console.log(gagal)
+}
+});
+</script>
+@endsection
