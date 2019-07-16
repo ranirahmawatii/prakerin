@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Kategori;
+use App\kategori;
 use App\tag;
 use App\artikel;
 use Session;
 use Auth;
-use Illuminate\Support\Facades\File;
+use File;
+use App\User;
+
 use Illuminate\Queue\Jobs\SyncJob;
 
 class artikelController extends Controller
@@ -20,8 +22,9 @@ class artikelController extends Controller
      */
     public function index()
     {
+        $user = User::all();
         $artikel = artikel::orderBy('created_at', 'desc')->get();
-        return view('backend.artikel.index', compact('artikel'));
+        return view('backend.artikel.index', compact('artikel', 'user'));
     }
 
     /**

@@ -39,7 +39,7 @@
                                 <td>{{$data->judul}}</td>
                                 <td>{{$data->slug}}</td>
                                 <td>{{$data->kategori->nama_kategori}}</td>
-                                <td>{{$data->name}}</td>
+                                <td>{{$data->id_user}}</td>
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
                                     style="width:250px; height:250px;" alt="Foto"></td>
 
