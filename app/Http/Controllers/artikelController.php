@@ -55,7 +55,7 @@ class artikelController extends Controller
     //       'id_tag' => 'required']);
     
 
-        $artikel = new artikel;
+        $artikel = new artikel();
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul);
         $artikel->konten = $request->konten;
